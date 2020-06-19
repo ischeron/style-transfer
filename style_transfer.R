@@ -8,14 +8,10 @@ tensorflow::tf$compat$v1$disable_eager_execution()
 #base_image_path <- "neural-style-base-img.png"
 #base_image_path <- "~/fabi.jpg"
 #base_image_path <- "~/hund.png"
-base_image_path <- "~/turm.png"
+base_image_path <- "~/Bilder/turm.png"
 #style_reference_image_path <- "neural-style-style.jpg"
 #style_reference_image_path <- "~/blumen.png"
-style_reference_image_path <- "~/muster1.png"
-
-for(k in 1:5){
-  
- style_reference_image_path <- paste0("~/muster",k,".png")
+style_reference_image_path <- "~/Bilder/muster1.png"
   
   iterations <- 10
   
@@ -250,4 +246,4 @@ for(k in 1:5){
       plot(as.raster(im))
     }
   )
-}
+
